@@ -1,0 +1,15 @@
+var React = require('react');
+
+var UserProfile = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <h2>
+                    {this.props.username}
+                </h2>
+            </div>
+        )
+    }
+});
+
+module.exports = UserProfile;
