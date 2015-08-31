@@ -2,12 +2,11 @@ var React = require('react');
 
 var NotesList = React.createClass({
     propTypes: {
-        username: React.PropTypes.string.isRequired,
         notes: React.PropTypes.array.isRequired
     },
     render: function() {
         var notes = this.props.notes.map(function(note, index ) {
-            return <li className="list-group-item" key={index}> {note} </li>
+            return <li className="list-group-item" key={index}> {note.text} </li>
         });
         return (
             <ul className="list-group">
